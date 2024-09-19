@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".RegisterActivity">
+
+    <!-- Title: Menampilkan judul "REGISTER"
+    di bagian atas layar dengan ukuran besar (30sp),
+    bold, dan dipusatkan -->
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="30sp"
+        android:textColor="@color/primary_text"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold" />
+
+    <!-- Input Fields: Nama/Username -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama/Username"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:minHeight="48dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- Input Fields: Email d
+    engan tipe input email -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:minHeight="48dp" />
+
+    <!-- Input Fields: Password dengan
+    tipe input password -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:minHeight="48dp" />
+
+    <!-- Input Fields: Nomor HP dengan
+    tipe input phone -->
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor HP"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:minHeight="48dp" />
+
+    <!-- Input Fields: Jenis Kelamin -->
+    <EditText
+        android:id="@+id/edtGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Kelamin"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit_text_background"
+        android:minHeight="48dp" />
+
+    <!-- Register Button: Tombol untuk
+    melakukan registrasi, dengan teks putih
+    dan background khusus -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@color/button_background"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:textAllCaps="false" />
+</LinearLayout>

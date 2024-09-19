@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <!-- Header: Menampilkan judul "Profile"
+    di bagian atas layar dengan ukuran
+    teks besar dan dipusatkan -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:letterSpacing="0.05"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1" />
+
+    <!-- Profile Details Section: Bagian ini
+    menampilkan detail profile user dengan
+    background sudut melengkung -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp">
+
+        <!-- Nama: Menampilkan teks "Nama"
+        sebagai informasi nama user -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp"
+            android:background="@drawable/text_background" />
+
+        <!-- Email: Menampilkan teks "Email"
+        sebagai informasi email user -->
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp"
+            android:background="@drawable/text_background" />
+
+        <!-- Nomor HP: Menampilkan teks "Nomor HP" sebagai
+        informasi nomor telepon user -->
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor HP"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp"
+            android:background="@drawable/text_background" />
+
+        <!-- Jenis Kelamin: Menampilkan teks "Jenis Kelamin"
+        sebagai informasi gender user -->
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp"
+            android:background="@drawable/text_background" />
+
+    </LinearLayout>
+
+</LinearLayout>
